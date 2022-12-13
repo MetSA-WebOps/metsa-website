@@ -3,6 +3,8 @@ import Home from "./pages/home";
 import Event from "./pages/event";
 import Header from "./shared/header";
 import Footer from "./shared/footer";
+import Carousel from "./pages/event/Carousel";
+import {events} from "./content/eventsdata";
 import "./App.css";
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
     <div className="App">
       <Header />
       <RouterProvider router={router} />
+      <Carousel props={events} />
       <Footer />
     </div>
   );
