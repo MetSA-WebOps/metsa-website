@@ -6,6 +6,7 @@ import Footer from "./shared/footer";
 import Carousel from "./pages/event/Carousel";
 import {events} from "./content/eventsdata";
 import "./App.css";
+import "./pages/event/Carousel.css"
 
 function App() {
   const router = createBrowserRouter([

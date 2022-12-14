@@ -5,7 +5,7 @@ import "./Carousel.css";
 function Carousel({ props }) {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  let timeOut = null;
+  let timeOut: boolean | number= false;
 
   useEffect(() => {
     timeOut =
@@ -22,7 +22,6 @@ function Carousel({ props }) {
   const slideLeft = () => {
     setCurrent(current === 0 ? props.length - 1 : current - 1);
   };
-  console.log(current);
   return (
     <div
       className="carousel"
@@ -52,8 +51,6 @@ function Carousel({ props }) {
               </div>
               
             </div>
-            {/*<button className="btn">Register</button>
-            <p className="description">{image.description}</p>*/}
             </div>
           );
         })}
