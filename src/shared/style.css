@@ -1,0 +1,27 @@
+.header{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F2E4B;
+  }
+  .logo{
+    margin: 10px;
+    border-radius: 50%;
+    height: 45px;
+  }
+  .nav-links{
+    margin: 10px;
+  }
+  .link{
+    margin: 10px;
+    color: #B5B4B4;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .link:hover{
+    opacity: 0.5;
+  }
+  .active {
+    color: white;
+  }
