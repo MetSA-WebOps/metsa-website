@@ -25,3 +25,20 @@
   .active {
     color: white;
   }
+  .footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    background-image:linear-gradient(rgba(201, 201, 201, 0.477), rgba(201, 201, 201, 0.477)), url('../assets/footer.jpeg');
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    overflow: hidden;
+  }
+  p {
+    margin: 0;
+    font-weight: 500;
+  }
