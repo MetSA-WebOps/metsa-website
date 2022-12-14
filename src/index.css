@@ -17,3 +17,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.header{
+  width: 100%;
+  justify-content: space-between;
+  background-color: #0F2E4B;
+}
+.logo{
+  border-radius: 50%;
+  height: 30px;
+}
