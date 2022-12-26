@@ -1,5 +1,29 @@
 {
-  "title": "METSA",
-  "subTitle": "Metallurgical and Materials Engineering Student Association",
-  "description": "It is a student body which handles the various departmental activites for the students  of MME. The main aim of the MetSA team is to promote a departmental connection within the students through different activities."
+  "events" : [
+    {
+      "title" : "meta night",
+      "content" : "Meta night was conducted successfully in a grand manner. Lot of wonderful perfomances were given by students of various batches and at the end dinner was given for everyone.",
+      "date" : "7 Nov"
+    },
+    {
+      "title" : "open house",
+      "content" : "This event invovled a supervised visit of all the labs of the Metallurgical departement so as to give them hands on experience on what is going on in the department and what they can possibly come across in the future.",
+      "date" : "10 Nov"
+    },
+    {
+      "title" : "industrial visit",
+      "content" : "Sophomores were taken to Tata steel Inc, Chennai branch to give them a hands on experience of what they would be doing in the future. It provided them an insight of how the processes they learn are done in industrial scale",
+      "date" : "25 Dec"
+    },
+    {
+      "title" : "amalgum",
+      "content" : "It’s the most awaited event. it is conducted in large scale.. idk much about it so i’ll just write something to fill the space hope it’s okay ..",
+      "date" : "15 Jan"
+    },
+    {
+      "title" : "freshie night",
+      "content" : "Freshie night is conducted to welcome the freshers to the department. It also serves as a platform to increase interacton between various batches.",
+      "date" : "14 Feb"
+    }
+  ]
 }
