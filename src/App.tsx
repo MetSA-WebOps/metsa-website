@@ -15,6 +15,10 @@ function App() {
       path: "event/:id",
       element: <Event />,
     },
+    {
+      path: "about",
+      element: <p>About us</p>
+    }
   ]);
 
   return (
