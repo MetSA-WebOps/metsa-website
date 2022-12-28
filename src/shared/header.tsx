@@ -13,7 +13,7 @@ function Header() {
           <p className="link" style={{ margin: 0, fontWeight: "400" }}>Events</p>
           <div className="event-links">
             {
-              eventlist.events.map((event, i) => <NavLink to={"/event/" + i.toString()} className="link eve-link" style={{ marginLeft: "0" }}>{event.title}</NavLink>)
+              eventlist.events.map((event, i) => <NavLink to={`event/${i}`} className="link eve-link" style={{ marginLeft: "0" }}>{event.title}</NavLink>)
             }
           </div>
         </div>

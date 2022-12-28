@@ -13,7 +13,7 @@ type EventProps = {
 const Event = ({ event, index }: EventProps) => {
     const navigator = useNavigate();
     const onClick = () => {
-        navigator(`event/:${index}`)
+        navigator(`event/${index}`)
     }
     const color = index < eventlist.events.length - 2 ? "#6ACE74" : "#DE5860";
     return (
@@ -22,11 +22,15 @@ const Event = ({ event, index }: EventProps) => {
                 <h2>{event.title}</h2>
                 <p>{event.content}</p>
             </div>
-            <div className="date" style={{ backgroundColor: color }}>
-                <h1 style={{ margin: "0" }}>{event.date.split(" ")[0]}</h1>
-                <h3 style={{ margin: "0" }}>{event.date.split(" ")[1]}</h3>
+            <div className="timeline">
+                <div style={{ backgroundColor: `${index != 0 ? color : "transparent"}` }} className="vertical"></div>
+                <div className="date" style={{ backgroundColor: color }}>
+                    <h1 style={{ margin: "0" }}>{event.date.split(" ")[0]}</h1>
+                    <h3 style={{ margin: "0" }}>{event.date.split(" ")[1]}</h3>
+                </div>
+                <div style={{ backgroundColor: `${index != eventlist.events.length - 1 ? color : "transparent"}` }} className="vertical"></div>
             </div>
-            <div className="empty"></div>
+
         </div >
     )
 }
