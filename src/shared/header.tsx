@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import './style.css';
+import eventlist from "../content/home.json"
 
 function Header() {
   return (
@@ -8,10 +9,17 @@ function Header() {
       <div className="nav-links">
         <NavLink to="/" className="link">Home</NavLink>
         <NavLink to="about" className="link">About Us</NavLink>
-        <NavLink to="event/1" className="link">Events</NavLink>
-        <NavLink to="sponsors" className="link">Sponsors</NavLink>
-        <NavLink to="registration" className="link">Registration</NavLink>
-        <NavLink to="gallery" className="link">Gallery</NavLink>
+        <div className="nav-events">
+          <p className="link" style={{ margin: 0, fontWeight: "400" }}>Events</p>
+          <div className="event-links">
+            {
+              eventlist.events.map((event, i) => <NavLink to={"/event/" + i.toString()} className="link eve-link" style={{ marginLeft: "0" }}>{event.title}</NavLink>)
+            }
+          </div>
+        </div>
+        <NavLink to="/sponsors" className="link">Sponsors</NavLink>
+        <NavLink to="/registration" className="link">Registration</NavLink>
+        <NavLink to="/gallery" className="link">Gallery</NavLink>
       </div>
     </nav >
   );

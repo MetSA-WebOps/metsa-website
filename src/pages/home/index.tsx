@@ -21,6 +21,7 @@ function Home() {
       <h2 style={{ margin: "60px", color: "white", fontSize: "40px" }}>Timeline of Events</h2>
       <Eventlist />
       <button className="events-btn" onClick={onClick}>Know more</button>
+      <h2 style={{ margin: "60px", color: "white", fontSize: "40px" }}>Our Sponsors</h2>
     </div>
   );
 }
