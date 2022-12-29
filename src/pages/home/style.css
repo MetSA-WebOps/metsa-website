@@ -9,14 +9,15 @@
   border-radius: 23px;
   text-align: left;
   height: 10rem;
-  padding: 4%;
+  padding: 1.5rem;
   color: white;
   width: 70%;
   transition: transform 0.3s;
   overflow: hidden;
 }
-.event-content:hover{
+.event-content:hover, .date:hover{
   transform: scale(1.05);
+  transition: transform 0.3s;
   cursor: pointer;
 }
 h2{
@@ -27,7 +28,7 @@ h2{
 .event-list{
   display: flex;
   flex-direction: column;
-  padding: 3rem
+  padding: 5rem
 }
 .start{
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("src/assets/gc.webp");
@@ -76,6 +77,7 @@ h2{
   padding-top: 1.7rem;
   justify-content: center;
   line-height: 2rem;
+  transition: transform 0.3s;
 }
 .event{
   display:grid;
@@ -95,4 +97,44 @@ h2{
 .vertical{
   width: 1rem;
   height: 100%;
+}
+@media only screen and (min-width : 650px) and (max-width : 849px){
+  .start-content{
+    width: 85%
+  }
+  .empty{
+    width: 0;
+  }
+  .event{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .right-event{
+    direction: initial;
+  }
+  .event-content{
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width : 850px) and (max-width : 1150px){
+  .event-content, .empty{
+    width: 90%;
+  }
+}
+@media only screen and (max-width : 649px){
+  .start-content{
+    width: 85%
+  }
+  .empty{
+    width: 0;
+    height: 0;
+  }
+  .event{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .vertical{
+    height: 3rem;
+  }
 }

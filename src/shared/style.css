@@ -31,7 +31,7 @@
     background-size: cover;
     width: 100%;
     height: fit-content;
-    background-image:linear-gradient(rgba(201, 201, 201, 0.477), rgba(201, 201, 201, 0.477)), url('../assets/footer.jpeg');
+    background-image:linear-gradient(rgba(233, 212, 212, 0.477), rgba(233, 212, 212, 0.477)), url('../assets/footer.jpeg');
     text-align: center;
     display: flex;
     align-items: center;
@@ -84,4 +84,17 @@ p.link:hover{
 .eve-link:hover{
   opacity: 1;
   background-color: #072139; 
+}
+.mail{
+  color: black;
+  font-weight: 500;
+}
+@media only screen and (max-width : 649px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer img{
+    margin: 20px;
+  }
 }

@@ -28,7 +28,7 @@ const Event = ({ event, index }: EventProps) => {
                     <h1 style={{ margin: "0" }}>{event.date.split(" ")[0]}</h1>
                     <h3 style={{ margin: "0" }}>{event.date.split(" ")[1]}</h3>
                 </div>
-                <div style={{ backgroundColor: `${index != eventlist.events.length - 1 ? color : "transparent"}` }} className="vertical"></div>
+                <div style={{ backgroundColor: color }} className="vertical mobile"></div>
             </div>
 
         </div >
