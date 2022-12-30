@@ -85,6 +85,7 @@ h2{
 .event{
   display:grid;
   grid-template-columns: 5fr 1fr 5fr;
+  
 }
 .right-event{
   direction: rtl;

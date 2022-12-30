@@ -23,12 +23,12 @@ const Event = ({ event, index }: EventProps) => {
                 <p>{event.content}</p>
             </div>
             <div className="timeline">
-                <div style={{ backgroundColor: `${index != 0 ? color : "transparent"}` }} className="vertical"></div>
+                <div style={{ backgroundColor: color }} className="vertical"></div>
                 <div className="date" style={{ backgroundColor: color }}>
                     <h1 style={{ margin: "0" }}>{event.date.split(" ")[0]}</h1>
                     <h3 style={{ margin: "0" }}>{event.date.split(" ")[1]}</h3>
                 </div>
-                <div style={{ backgroundColor: color }} className="vertical mobile"></div>
+                <div style={{ backgroundColor: color }} className="vertical"></div>
             </div>
 
         </div >

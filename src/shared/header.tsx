@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import './style.css';
 import eventlist from "../content/home.json"
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -13,6 +13,11 @@ function Header() {
   const eventClick = () => {
     setEvents(!events);
   }
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    }
+  }, [open]);
   return (
     <nav className="header">
       <NavLink to="/" style={{ display: 'flex' }}><img src="src/assets/logo.png" className="logo" /></NavLink>
@@ -32,7 +37,7 @@ function Header() {
         <NavLink to="/gallery" className="link">Gallery</NavLink>
       </div>
       <div className="mobile">
-        <img src="src/assets/menu.png" onClick={onClick} style={{ height: "1.5rem", padding: "1rem" }} />
+        <img src="src/assets/menu.png" onClick={onClick} style={{ height: "1.5rem", padding: "1rem", zIndex: "1" }} />
         {
           open ? <div className="menu">
             <NavLink to="/" className="link">Home</NavLink>

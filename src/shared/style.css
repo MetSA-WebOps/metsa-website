@@ -20,8 +20,16 @@
     text-decoration: none;
     font-size: 16px;
   }
-  .link:hover{
-    opacity: 0.5;
+  .link::after{
+    content : '';
+    width: 0%;
+    height: 3px;
+    background-color: #C63A34;
+    display: block;
+    transition: 0.4s;
+  }
+  .link:hover::after{
+    width : 100%
   }
   .active {
     color: white;
@@ -64,6 +72,7 @@
   .event-links{
     display: none;
     position: absolute;
+    flex-direction: column;
     left : -7px;
     text-align: left;
     background-color: #0F2E4B;
@@ -83,7 +92,6 @@ p.link:hover{
 }
 .eve-link:hover{
   opacity: 1;
-  background-color: #072139; 
 }
 .mail{
   color: black;
@@ -102,18 +110,32 @@ p.link:hover{
     margin: 20px;
   }
 }
+.link.active::after{
+  content : '';
+  width: 100%;
+  height: 3px;
+  background-color: #C63A34;
+  display: block;
+  
+}
 .menu{
   position: fixed;
   width: 40%;
   right: 0;
   top : 4rem;
-  height: 100vh;
-  padding: 1.5rem 3rem 0 1.5rem;
+  min-height: 100vh;
+  padding: 2rem 3rem 0 1.5rem;
   display: flex;
   flex-direction: column;
   background-color: #0F2E4B;
 }
 @media only screen and (max-width : 599px){
+  .link:hover::after{
+    width : 70%
+  }
+  .link.active::after{
+    width: 70%;
+  }
   .nav-links{
     display: none;
   }
