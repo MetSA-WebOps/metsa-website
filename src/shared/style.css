@@ -89,12 +89,47 @@ p.link:hover{
   color: black;
   font-weight: 500;
 }
+.mobile{
+  display: none;
+}
 @media only screen and (max-width : 649px){
+  
   .footer{
     display: flex;
     flex-direction: column;
   }
   .footer img{
     margin: 20px;
+  }
+}
+.menu{
+  position: fixed;
+  width: 40%;
+  right: 0;
+  top : 4rem;
+  height: 100vh;
+  padding: 1.5rem 3rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #0F2E4B;
+}
+@media only screen and (max-width : 599px){
+  .nav-links{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-events p{
+    z-index: 0;
+    text-align: left;
+  }
+  .event-links{
+    position: relative;
+    margin-left: 1.5rem;
+  }
+  .eve-link{
+    margin: 0;
   }
 }

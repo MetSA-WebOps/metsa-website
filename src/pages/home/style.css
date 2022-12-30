@@ -5,6 +5,9 @@
   justify-content: space-between;
   background-color: #3B3D50;
 }
+h1, h2, h3{
+  line-height: 1.2;
+}
 .event-content{
   border-radius: 23px;
   text-align: left;
@@ -123,7 +126,7 @@ h2{
 }
 @media only screen and (max-width : 649px){
   .start-content{
-    width: 85%
+    width: 90%
   }
   .empty{
     width: 0;
@@ -136,5 +139,11 @@ h2{
   }
   .vertical{
     height: 3rem;
+  }
+  .event-content{
+    width: 100%;
+  }
+  .events-btn{
+    padding: 1rem 2rem;
   }
 }
