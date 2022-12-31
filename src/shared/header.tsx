@@ -38,8 +38,8 @@ function Header() {
       </div>
       <div className="mobile">
         <img src="src/assets/menu.png" onClick={onClick} style={{ height: "1.5rem", padding: "1rem", zIndex: "1" }} />
-        {
-          open ? <div className="menu">
+        <div className={`menu ${open ? 'active' : ''}`}>
+          <div className="links" style={{ display: open ? 'flex' : 'none' }} >
             <NavLink to="/" className="link">Home</NavLink>
             <NavLink to="about" className="link">About Us</NavLink>
             <div className="nav-events">
@@ -53,8 +53,8 @@ function Header() {
             <NavLink to="/sponsors" className="link">Sponsors</NavLink>
             <NavLink to="/registration" className="link">Registration</NavLink>
             <NavLink to="/gallery" className="link">Gallery</NavLink>
-          </div> : <></>
-        }
+          </div>
+        </div>
       </div>
     </nav >
   );
