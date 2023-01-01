@@ -22,6 +22,7 @@ function Carousel({ props }) {
   const slideLeft = () => {
     setCurrent(current === 0 ? props.length - 1 : current - 1);
   };
+  
   return (
     <div
       className="carousel"
@@ -37,6 +38,7 @@ function Carousel({ props }) {
         {props.map((image, index) => {
           return (
             <div>
+    
             <div
               key={index}
               className={
@@ -51,6 +53,7 @@ function Carousel({ props }) {
               </div>
               
             </div>
+            <p className="desc">{image.description}</p>
             </div>
           );
         })}
@@ -76,6 +79,7 @@ function Carousel({ props }) {
           })}
         </div>
       </div>
+      
     </div>
   );
 }

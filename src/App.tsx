@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <Header />
       <RouterProvider router={router} />
-      <Carousel props={events} />
+      <Event />
       <Footer />
     </div>
   );
