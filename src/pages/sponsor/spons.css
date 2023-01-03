@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+}
+.background{
+    background-color: darkgrey;
+    background-size:cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+
+.primary {
+    position:relative;
+    color : rgb(52, 52, 234);
+    top: 5%;
+    text-align: center;
+    font-size: 500%;
+}
+
+.spons1{
+    background-color: white;
+    color : rgb(52, 52, 234);
+    position:absolute;
+    top: 175px;
+    left: 0%;
+    height:70%;
+    width:26.666%;
+    margin-top:0%;
+    margin-left: 5%;
+    border: 1px solid black;
+    text-align:center;
+    padding: 10px;
+    border-radius: 25px;
+    transition:1s;
+}
+.spons1:hover{
+    transform:scale(1.1);
+}
+
+
+.spons2{
+    background-color: white;
+    color : rgb(52, 52, 234);
+    position:absolute;
+    top: 175px;
+    left: 31.666%;
+    height:70%;
+    width:26.666%;
+    margin-top:0%;
+    margin-left: 5%;
+    border: 1px solid black;
+    text-align:center;
+    padding: 10px;
+    border-radius: 25px;
+    transition:1s;
+}
+.spons2:hover{
+    transform:scale(1.1);
+}
+
+.spons3{
+    background-color: white;
+    color : rgb(52, 52, 234);
+    position:absolute;
+    top: 175px;
+    left: 63.332%;
+    height:70%;
+    width:26.666%;
+    margin-top:0%;
+    margin-left: 5%;
+    border: 1px solid black;
+    text-align:center;
+    padding: 10px;
+    border-radius: 25px;
+    transition:1s;
+}
+.spons3:hover{
+    transform:scale(1.1);
+}
+
+.image img{
+    width: 60%;
+    border-radius:50%;
+}
+
+@media(max-width:850px){
+    *{
+        margin:0;
+        padding:0;
+    }
+    .background{
+        background-color: darkgrey;
+        height:auto;
+        background-size:cover;
+    }
+
+    .primary {
+        padding:1%;
+        color : rgb(52, 52, 234);
+        text-align: center;
+        font-size: 350%;
+    }
+
+    .spons1{
+        background-color: white;
+        color : rgb(52, 52, 234);
+        position:relative;
+        top: 0%;
+        left: 0%;
+        height:70%;
+        width:80%;
+        margin:5%;
+        border: 1px solid black;
+        text-align:center;
+        border-radius: 25px;
+        transition:1s;
+        padding:5%;
+    }
+    .spons1:hover{
+        transform:scale(1.05);
+    }
+    
+    .spons2{
+        background-color: white;
+        color : rgb(52, 52, 234);
+        position:relative;
+        top: 0%;
+        left: 0%;
+        height:70%;
+        width:80%;
+        margin:5%;
+        border: 1px solid black;
+        text-align:center;
+        border-radius: 25px;
+        transition:1s;
+        padding:5%;
+    }
+    .spons2:hover{
+        transform:scale(1.05);
+    }
+    
+    .spons3{
+        background-color: white;
+        color : rgb(52, 52, 234);
+        position:relative;
+        top: 0%;
+        left: 0%;
+        height:70%;
+        width:80%;
+        margin:5%;
+        margin-bottom: 5%;
+        border: 1px solid black;
+        text-align:center;
+        border-radius: 25px;
+        transition:1s;
+        padding:5%;
+    }
+    .spons3:hover{
+        transform:scale(1.05);
+    }
+    
+    .image img{
+        padding:2.5%;
+        width: 60%;
+        left: 10000px;
+        top:25px;
+        border-radius:50%;
+    }
+}
